@@ -1,2 +1,2 @@
 # actions-test
-Lorem ipsum
+Lorem ipsum dolor sit amet
