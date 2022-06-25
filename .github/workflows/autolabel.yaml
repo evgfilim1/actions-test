@@ -5,13 +5,13 @@ on:
     types: 
       - opened
     branches:
-      - dev
+      - master
 
 jobs:
   put-label:
     runs-on: ubuntu-latest
     steps:
-      - name: Add dev label
+      - name: Add master label
         uses: andymckay/labeler@master
         with:
-          add-labels: dev
+          add-labels: master
