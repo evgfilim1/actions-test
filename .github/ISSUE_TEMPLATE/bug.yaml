@@ -1,5 +1,7 @@
 name: Bug report
 description: Report issues affecting the framework or the documentation
+labels:
+  - bug
 body:
   - type: checkboxes
     attributes:
