@@ -66,7 +66,8 @@ body:
       placeholder: |
         1. step 1
         2. step 2
-        3. you get it...
+        3. ...
+        4. you get it...
     validations:
       required: true
 
@@ -82,16 +83,19 @@ body:
   - type: textarea
     attributes:
       label: Logs
-      description: Provide the complete traceback (if applicable)
+      description: Provide the complete traceback (if applicable) or other kind of logs.
       placeholder: |
         Traceback (most recent call last):
           File "main.py", line 1, in <module>
             ...
         SomeException: ...
       render: sh
-  
+
   - type: textarea
     attributes:
       label: Additional information
       description: Please provide any additional information that may help us to reproduce the issue.
-      placeholder: E.g. this behavior is reproducible only in group chats.
+      placeholder: |
+        E.g. this behavior is reproducible only in group chats.
+        
+        You can also attach additional screenshots, logs, or other files.
