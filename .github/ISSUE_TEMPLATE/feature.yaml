@@ -1,12 +1,12 @@
 name: Feature request
-description: Report features you would like to see in the framework
+description: Report features you would like to see or improve in the framework.
 labels:
-  - new feature
+  - enhancement
 body:
   - type: textarea
     attributes:
       label: Problem
-      description: Is your feature request related to a specific problem? If not, please describe the general idea of your feature.
+      description: Is your feature request related to a specific problem? If not, please describe the general idea of your request.
       placeholder: e.g. I want to send a photo to a user by url.
     validations:
       required: true
@@ -18,7 +18,7 @@ body:
       placeholder: e.g. Add a method to send a photo to a user by url.
     validations:
       required: true
-  
+
   - type: textarea
     attributes:
       label: Alternatives
