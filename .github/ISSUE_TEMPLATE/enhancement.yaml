@@ -1,0 +1,45 @@
+name: Enhancement request
+description: Report things that you would like to improve in the framework
+labels:
+  - enhancement
+body:
+  - type: textarea
+    attributes:
+      label: Problem
+      description: Is your feature request related to a specific problem? If not, please describe the general idea of your feature.
+      placeholder: e.g. I want to send a message with formatting applied automatically.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Possible solution
+      description: Describe the solution you would like to see in the framework.
+      placeholder: e.g. Add a global `parse_mode` to all methods.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Alternatives
+      description: What other solutions do you have in mind?
+      placeholder: e.g. I've written own wrapper for `send_message` that passes `parse_mode` automatically.
+
+  - type: textarea
+    attributes:
+      label: Code example
+      description: A small code example that demonstrates the behavior you would like to see.
+      placeholder: |
+        bot = Bot(TOKEN, parse_mode=ParseMode.HTML)
+        ...
+        await bot.send_message(user_id, text)  # text will be parsed as HTML
+      render: python3
+
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: Any additional information you would like to provide.
+      placeholder: |
+        E.g. all methods should support resetting the global formatting.
+        
+        You can also attach additional pictures or other files.
