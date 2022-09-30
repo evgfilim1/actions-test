@@ -5,6 +5,11 @@ on:
     types:
       - published
       - updated
+  push:
+    branches:
+      - master
+    paths:
+      - ".github/workflows/package.yaml"
 
 permissions:
   contents: read
@@ -17,6 +22,4 @@ jobs:
     steps:
       - name: Print incoming event
         run: |
-          cat <<EOF
-          ${{ github.event }}
-          EOF
+          cat $GITHUB_EVENT_PATH
