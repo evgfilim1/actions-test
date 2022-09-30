@@ -1,0 +1,22 @@
+name: Deploy a Docker container
+
+on:
+  registry_package:
+    types:
+      - published
+      - updated
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    name: Debug
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print incoming event
+        run: |
+          cat <<EOF
+          ${{ github.event }}
+          EOF
